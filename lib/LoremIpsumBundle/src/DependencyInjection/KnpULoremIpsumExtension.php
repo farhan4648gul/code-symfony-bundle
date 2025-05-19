@@ -11,11 +11,17 @@ class KnpULoremIpsumExtension extends Extension
 {
     public function load(array $configs, ContainerBuilder $container)     
     { 
+        // dd($configs); 
         $loader = new XmlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config')); 
         $loader->load('services.xml'); 
 
         // dd(' inside KnpU Extension' ); 
-    }
+    } 
+
+    public function getAlias() 
+    { 
+        return 'knpu_lorem_ipsum';
+    } 
     
 }
 

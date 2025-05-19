@@ -28,3 +28,7 @@ framework:
 
         # APCu (not recommended with heavy random-write workloads as memory fragmentation can cause perf issues)
         app: '%cache_adapter%'
+
+
+knpu_lorem_ipsum:
+    bar: whatever_from_framework_yaml  
